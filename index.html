@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Polymem & Radiotherapy</title>
     <style>
         body { 
@@ -13,6 +13,7 @@
             background-size: cover; 
             color: white;
             margin: 0;
+            -webkit-text-size-adjust: 100%;
         }
         .container { 
             max-width: 90%; 
@@ -21,15 +22,41 @@
             padding: 20px; 
             border-radius: 10px;
         }
+        .audio-section {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .audio-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
         img { width: 100%; max-width: 600px; border: 1px solid #ccc; }
         .faq { text-align: left; margin-top: 20px; }
         .faq h3 { cursor: pointer; border-bottom: 1px solid #ddd; padding: 15px 0; }
         .faq p { display: none; padding: 15px; }
-        iframe { width: 100%; height: auto; min-height: 500px; }
+        iframe { width: 100%; height: auto; min-height: 500px; border: none; }
         audio { width: 100%; }
-        @media (min-width: 768px) {
-            .container { max-width: 800px; padding: 30px; }
-            iframe { height: 600px; }
+
+        @media (max-width: 768px) {
+            .container { max-width: 95%; padding: 15px; }
+            iframe { min-height: 400px; }
+            h1, h2, h3 { font-size: 1.2em; }
+            p { font-size: 1em; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 10px; }
+            iframe { min-height: 300px; }
+            h1, h2 { font-size: 1em; }
+            h3 { font-size: 0.9em; }
+            p { font-size: 0.9em; }
         }
     </style>
     <script>
@@ -47,11 +74,14 @@
         <h2>Poster</h2>
         <iframe src="https://www.bio-med.co.il/wp-content/uploads/2025/03/Polymem-Case-Study-Getter-A4.pdf"></iframe>
         
-        <h2>We know you are in a hurry. You can easily listen to our studio dialog</h2>
-        <audio controls>
-            <source src="https://www.bio-med.co.il/wp-content/uploads/2025/03/WhatsApp-Audio-2025-03-03-at-18.48.56.mp4" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="audio-section">
+            <div class="audio-icon">🔊</div>
+            <h2>We know you are in a hurry. You can easily listen to our studio dialog</h2>
+            <audio controls>
+                <source src="https://www.bio-med.co.il/wp-content/uploads/2025/03/WhatsApp-Audio-2025-03-03-at-18.48.56.mp4" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         
         <div class="faq">
             <h2>FAQ</h2>
