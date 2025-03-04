@@ -8,7 +8,7 @@
         body { 
             font-family: Arial, sans-serif; 
             text-align: center; 
-            padding: 30px; 
+            padding: 20px; 
             background: url('https://www.bio-med.co.il/wp-content/uploads/2015/12/shutterstock_37245157.jpg') no-repeat center center fixed; 
             background-size: cover; 
             color: white;
@@ -19,12 +19,12 @@
             max-width: 90%; 
             margin: auto; 
             background: rgba(0, 0, 0, 0.7); 
-            padding: 30px; 
+            padding: 20px; 
             border-radius: 10px;
         }
         .audio-section {
             background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             margin: 20px auto;
             border: 2px solid white;
@@ -35,7 +35,20 @@
         }
         .audio-icon {
             font-size: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+        }
+        .download-section {
+            margin-top: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
         }
         img { width: 100%; max-width: 600px; border: 1px solid #ccc; }
         .faq { text-align: left; margin-top: 20px; }
@@ -45,14 +58,14 @@
         audio { width: 100%; }
 
         @media (max-width: 768px) {
-            .container { max-width: 95%; padding: 25px; }
+            .container { max-width: 95%; padding: 15px; }
             iframe { min-height: 400px; }
             h1, h2, h3 { font-size: 1.2em; }
             p { font-size: 1em; }
         }
 
         @media (max-width: 480px) {
-            .container { padding: 20px; }
+            .container { padding: 10px; }
             iframe { min-height: 300px; }
             h1, h2 { font-size: 1em; }
             h3 { font-size: 0.9em; }
@@ -68,15 +81,19 @@
 </head>
 <body>
     <div class="container">
-        <h1>POLYMEM & RADIOTHERAPY</h1>
-        <h2>Case Report Poster </br> by Getter Bio Med Pharma</h2>
+        <h1>Case Report Poster by Getter Bio Med Pharma</h1>
+        <p>A standard of care for radiation burns</p>
         
-        <h3>A standard of care for radiation burns</h3>
+        <h2>Poster</h2>
         <iframe src="https://www.bio-med.co.il/wp-content/uploads/2025/03/Polymem-Case-Study-Getter-A4.pdf"></iframe>
+        
+        <div class="download-section">
+            <a class="download-button" href="https://www.bio-med.co.il/wp-content/uploads/2025/03/Polymem-Case-Study-Getter-A4.pdf" target="_blank" download>Download PDF</a>
+        </div>
         
         <div class="audio-section">
             <div class="audio-icon">🔊</div>
-            <h2>Listen to our expert discussion for a quick overview of the case report. </br> Just press PLAY</h2>
+            <h2>Prefer listening? Hear the key insights from our studio discussion.</h2>
             <audio controls>
                 <source src="https://www.bio-med.co.il/wp-content/uploads/2025/03/WhatsApp-Audio-2025-03-03-at-18.48.56.mp4" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -84,7 +101,7 @@
         </div>
         
         <div class="faq">
-            <h1>FAQ</h1>
+            <h2>FAQ</h2>
             <h3 onclick="toggleFAQ('faq1')">What are radiation burns and how do they differ from typical heat burns?</h3>
             <p id="faq1">Radiation burns are a common side effect of radiotherapy, a crucial part of cancer treatment. Unlike typical heat burns, which occur immediately upon contact with a hot object, radiation burns develop gradually...</p>
             
@@ -93,25 +110,7 @@
             
             <h3 onclick="toggleFAQ('faq3')">What is PolyMem, and how does it address radiation burns?</h3>
             <p id="faq3">PolyMem is a wound dressing designed to treat various types of burns, including radiation-induced burns. Its key advantage lies in its ability to offer early intervention and continuous healing support...</p>
-	    
-	    <h3 onclick="toggleFAQ('faq4')">What was the objective of the PolyMem Radiotherapy Project in Israel?</h3>
-            <p id="faq4">The primary objective of the PolyMem Radiotherapy Project in Israel was to establish PolyMem as the standard treatment for radiation burns across all radiotherapy institutes in the country. This involved transitioning PolyMem from an optional product to an integral part of the therapeutic guidelines for managing radiation-induced skin damage.</p>
-            
-            <h3 onclick="toggleFAQ('faq5')">What were the key steps taken to implement PolyMem as a standard treatment in Israel?</h3>
-            <p id="faq5">The implementation strategy involved several key steps: identifying radiotherapy institutes, engaging with nursing teams through education and presentations on PolyMem's benefits, providing free samples for a pilot study, expanding the project after positive patient outcomes, developing customized post-radiation booklets with nursing staff, and securing agreement from institutes to include PolyMem in their official therapeutic guidelines.</p>
-            
-            <h3 onclick="toggleFAQ('faq6')">What were the results and impact of the PolyMem Radiotherapy Project in Israel?</h3>
-            <p id="faq6">The project successfully introduced PolyMem as a standard treatment in leading Israeli institutes. The best practices were then shared nationwide, expanding implementation to all radiotherapy centres. The project also involved developing and funding brochures for multiple hospitals, providing clear usage guidelines for nursing teams. Ongoing support and funding ensure PolyMem remains the standard of care.</p>
-       
-            <h3 onclick="toggleFAQ('faq7')">How did the project address the challenge of integrating PolyMem into existing treatment protocols??</h3>
-            <p id="faq7">The project recognized that existing standard treatment protocols lacked a proactive dressing solution for radiation burns. By working closely with nursing teams and integrating PolyMem into official therapeutic guidelines, the project ensured that PolyMem was not just available, but actively used and promoted as part of the standard care for radiation burns.</p>
-            
-            <h3 onclick="toggleFAQ('faq8')">What lessons can be learned from the PolyMem Radiotherapy Project in Israel regarding the adoption of new medical treatments?</h3>
-            <p id="faq8">The success of the project highlights the importance of strategic partnerships with key institutions, comprehensive education and training for healthcare professionals, clinical validation through pilot studies, and ongoing support to maintain standards. Clear communication, customized resources, and securing official endorsement from healthcare providers were crucial in establishing PolyMem as the standard of care.</p>
-            
-   </div>
-    
- 
+        </div>
     </div>
 </body>
 </html>
